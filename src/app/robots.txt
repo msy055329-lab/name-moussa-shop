@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://moussashop.com/sitemap.xml
+
+# Crawl-delay: 10
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
