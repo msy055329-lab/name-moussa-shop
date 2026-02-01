@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'La marketplace 100% africaine pour acheter et vendre en toute confiance',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://name-moussa-shop.vercel.app', // ⬅️ CHANGE ICI
+    url: 'https://name-moussa-shop.vercel.app',
     siteName: "L'ACTU DE MOUSSA SHOP",
   },
   twitter: {
@@ -48,15 +48,22 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         {/* ✅ Balises importantes pour le SEO */}
-        <link rel="canonical" href="https://name-moussa-shop.vercel.app" /> {/* ⬅️ CHANGE ICI */}
+        <link rel="canonical" href="https://name-moussa-shop.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#2563eb" />
         
         {/* ✅ Favicon */}
         <link rel="icon" href="/favicon.ico" />
         
-        {/* ✅ VÉRIFICATION GOOGLE - TRÈS IMPORTANT ! */}
-        <meta name="google-site-verification" content="x-B4MCYdFU7Gjnu9rNlCrF2Ytw4e-QIzvBYb5SmMMFc" /> {/* ⬅️ TON NOUVEAU CODE */}
+        {/* ✅ VÉRIFICATION GOOGLE */}
+        <meta name="google-site-verification" content="x-B4MCYdFU7Gjnu9rNlCrF2Ytw4e-QIzvBYb5SmMMFc" />
+        
+        {/* ✅ ADSENSE - TRÈS IMPORTANT ! */}
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9070636985771391"
+          crossOrigin="anonymous"
+        ></script>
         
         {/* ✅ JSON-LD pour le référencement */}
         <script
@@ -67,7 +74,7 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "L'ACTU DE MOUSSA SHOP",
               "description": "Marketplace africaine multi-vendeurs",
-              "url": "https://name-moussa-shop.vercel.app" // ⬅️ CHANGE ICI
+              "url": "https://name-moussa-shop.vercel.app"
             })
           }}
         />
